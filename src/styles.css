@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    background-color: #fbfaff;
+}
+a, a:hover{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+h2{
+    font-family:'Poppins', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color:#6b66f8;
+    margin-bottom: 25px;
+}
+h2 span{
+    color:#ff0000;
+}
+.social-icons{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.social-icons .social-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-icons .social-menu li a{
+   display: inline-block;
+   height: 50px;
+   width: 50px;
+   float: left;
+   margin: 15px 10px;
+   overflow: hidden;
+   background-color: #ffffff;
+   border-radius: 50px;
+   cursor: pointer;
+   -webkit-box-shadow: 0 3px 5px rgba(150, 150, 198, 0.6);
+   -moz-box-shadow: 0 3px 5px rgba(150, 150, 198, 0.6);
+   box-shadow: 0 3px 5px rgba(150, 150, 198, 0.6);
+   transition: all 0.3s ease-out;
+}
+.social-icons .social-menu li a:hover{
+    width: 180px;
+}
+.social-icons .social-menu li a .icon{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 2px;
+    box-sizing: border-box;
+    line-height: 50px;
+    transition: all 0.3s ease-out;
+}
+.social-icons .social-menu li a .icon i{
+    font-size: 18px;
+    line-height: 50px;
+    transition:all 0.3s ease-out;
+}
+.social-icons .social-menu li a:hover .icon i{
+    color: #ffffff;
+}
+
+.social-icons .social-menu li a .text{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 35px;
+    margin-left: 5px;
+    text-transform: capitalize;
+    transition: all 0.3s ease-out;
+}
+.social-icons .social-menu li a.facebook .icon,
+.social-icons .social-menu li a.facebook .text{
+    color: #4267B2;
+}
+.social-icons .social-menu li a.instagram .icon,
+.social-icons .social-menu li a.instagram .text{
+    color: #E1306C;
+}
+.social-icons .social-menu li a.twitter .icon,
+.social-icons .social-menu li a.twitter .text{
+    color: #00acee;
+}
+.social-icons .social-menu li a.google-plus .icon,
+.social-icons .social-menu li a.google-plus .text{
+    color: #db4a39;
+}
+.social-icons .social-menu li a.whatsapp .icon,
+.social-icons .social-menu li a.whatsapp .text{
+    color: #25D366;
+}
+.social-icons .social-menu li a.youtube .icon,
+.social-icons .social-menu li a.youtube .text{
+    color: #ff0000;
+}
+
+.social-icons .social-menu li a.facebook:hover .icon{
+    background: #4267b2;
+}
+.social-icons .social-menu li a.instagram:hover .icon{
+    background: #E1306C;
+}
+.social-icons .social-menu li a.twitter:hover .icon{
+    background: #00acee;
+}
+.social-icons .social-menu li a.google-plus:hover .icon{
+    background: #db4a39;
+}
+.social-icons .social-menu li a.whatsapp:hover .icon{
+    background: #25D366;
+}
+.social-icons .social-menu li a.youtube:hover .icon{
+    background: #ff0000;
+}
+
+@media only screen and (max-width: 866px){
+    h2{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width:667px){
+   .social-icons .social-menu li a,
+   .social-icons .social-menu li a .icon{
+        height: 40px;
+        width: 40px;
+   }
+   .social-icons .social-menu li a .icon,
+   .social-icons .social-menu li a .icon i{
+       line-height: 40px;
+   }
+}
